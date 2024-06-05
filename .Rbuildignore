@@ -1,2 +1,5 @@
 ^UWbiost561\.Final\.Project\.Rproj$
 ^\.Rproj\.user$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
