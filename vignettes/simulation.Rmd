@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 ```{r}
 library(WUbiost561.Final.Project)
 for (lambda in Lambda){
-  G_test <- WUbiost561.Final.Project::generate_sequence(1/2,lambda,1)
+  G_test <- UWbiost561.Final.Project::generate_sequence(1/2,lambda,1)
   G_count[which(Lambda == lambda)] <- sum(G_test>40.1)/length(G_test)
 }
 plot(Lambda,G_count,type = "o",xlab="",ylab="")
