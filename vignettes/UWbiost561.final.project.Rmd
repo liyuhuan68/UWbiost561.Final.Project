@@ -1,0 +1,39 @@
+---
+title: "simulation"
+author: "Yuhuan Li"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{simulation}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+This is a vignettes for my package. 
+# Generate data and testing
+I will generate some time series sequences with change point at different time points. And then we will use the Gn test to test the change point.
+```{r Generate}
+library(UWbiost561.Final.Project)
+Lambda <- seq(from = 0, to = 1, length = 10) #given (0,1)
+G_count <- vector(mode="numeric",length=0)
+for (lambda in Lambda){
+  G_test <- UWbiost561.Final.Project::generate_sequence(1/2,lambda,1)
+  G_count[which(Lambda == lambda)] <- sum(G_test>40.1)/length(G_test)
+}
+
+
+```
+
+# Plot
+Then plot the change point with the accuracy of our tests.
+```{r plot, fig.align='center'}
+plot(Lambda,G_count,type = "o",xlab="",ylab="")
+```
+
