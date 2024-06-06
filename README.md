@@ -8,7 +8,7 @@ This is a package for UW BIOST 561 (Spring 2024) final project by Yuhuan Li (Ins
 This package is used to test the method mentioned in Aue(2012)'s paper "Structural breaks in time series". We will generate time series with time change point at different time points and test the accuracy of that method.
 
 - The URL to the GitHub (i.e., the source code) is: https://github.com/liyuhuan68/UWbiost561.Final.Project
-- The URL to the Pkgdown webpage is: file:///C:/Users/90927/Desktop/Anni/561/UWbiost561.Final.Project/docs/index.html
+- The URL to the Pkgdown webpage is: https://liyuhuan68.github.io/UWbiost561.Final.Project/
 
 # How to install
 This package is called `UWbiost561.Final.Porject`. To install, run the following code (in R):

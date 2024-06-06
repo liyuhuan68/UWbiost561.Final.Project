@@ -14,3 +14,4 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://liyuhuan68.github.io/UWbiost561.Final.Project/
